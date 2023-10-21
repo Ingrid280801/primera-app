@@ -10,6 +10,9 @@ const myData = {
   value: 63,
 };
 
+sendMyData().then(result => {})
+getMyData().then(result => {})
+
 async function sendMyData() {
   const result = await myDevice.sendData(myData);
 
